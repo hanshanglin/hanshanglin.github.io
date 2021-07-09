@@ -1,0 +1,14 @@
+{
+    "name": "HANSAMA blog",
+    "short_name": "HANSAMA",
+    "icons": [
+        {
+            "src": "./icons/android-chrome-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#e5e6d2",
+    "background_color": "#e5e6d2",
+    "display": "standalone"
+}

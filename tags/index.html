@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" /><meta name="theme-color" content="#fff" />
+        <script>
+            const userPrefers = localStorage.getItem('theme');
+            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+            if (userPrefers === "dark") {
+                changeModeMeta("dark");
+            } else if (userPrefers === "light") {
+                changeModeMeta("light");
+            } else if (darkModeMediaQuery.matches) {
+                changeModeMeta("dark");
+            } else if (lightModeMediaQuery.matches) {
+                changeModeMeta("light");
+            }
+            function changeModeMeta() {
+                document.documentElement.setAttribute('data-theme', arguments[0]);
+                if (arguments[0] === "dark") {
+                    changeThemeColor("#1c1c21");
+                } else {
+                    changeThemeColor("#fff");
+                }
+            }
+            function changeThemeColor() {
+                document.querySelector('meta[name="theme-color"]').setAttribute('content', arguments[0]);
+            }
+        </script>
+
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    
+    <meta name="renderer" content="webkit" />
+
+    <meta name="generator" content="Hugo 0.63.2" />
+
+    <title>Tags | HANSAMA&#39;s bloG</title>
+
+    <link rel="stylesheet" href="/css/meme.min.2bccb69a2479f772a03a5e7397edbe692957733ba697f3c88ec9e8e9b81b376a.css" integrity="sha256-K8y2miR593KgOl5zl+2+aSlXczuml/PIjsno6bgbN2o=" data-instant-track />
+
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,700,700i|Noto+Serif+SC:400,500,700|Source+Code+Pro:400,400i,700,700i&display=swap&subset=chinese-simplified" rel="stylesheet" />
+
+    <meta name="author" content="HAN Shanglin" />
+    <meta name="description" content="这是 hansama 的私人博客，记录平时生活学习的所见所想，原来的文章会不断迁移过来 ;)" />
+    <meta name="keywords" content="debate, leetcode, minecraft, rcu, 严谨认真, 休闲娱乐, 处世, 憨憨指北, 要死了的数学, 题解, life, tech" />
+    
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="HANSAMA&#39;s bloG" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="HANSAMA&#39;s bloG" />
+    <meta name="msapplication-starturl" content="../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="https://hanshanglin.space/tags/" />
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "datePublished": "2019-04-15T09:17:00+00:00",
+        "dateModified": "2021-07-09T10:19:32+08:00",
+        "url": "https://hanshanglin.space/tags/",
+        "name": "Tags",
+        "description": "这是 hansama 的私人博客，记录平时生活学习的所见所想，原来的文章会不断迁移过来 ;)",
+        "keywords": "debate, leetcode, minecraft, rcu, 严谨认真, 休闲娱乐, 处世, 憨憨指北, 要死了的数学, 题解, life, tech",
+        "image": "https://hanshanglin.space/icons/apple-touch-icon.png",
+        "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)",
+        "publisher": {
+            "@type": "Organization",
+            "name": "HANSAMA's bloG",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://hanshanglin.space/icons/apple-touch-icon.png"
+            },
+            "url": "https://hanshanglin.space/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "https://hanshanglin.space/"
+        }
+    }
+</script>
+
+    
+    
+
+
+
+
+
+
+<meta property="og:title" content="Tags" />
+<meta property="og:description" content="这是 hansama 的私人博客，记录平时生活学习的所见所想，原来的文章会不断迁移过来 ;)" />
+<meta property="og:url" content="https://hanshanglin.space/tags/" />
+<meta property="og:site_name" content="HANSAMA&#39;s bloG" />
+<meta property="og:locale" content="zh-CN" /><meta property="og:image" content="https://hanshanglin.space/icons/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+        
+
+
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142189813-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-142189813-2');
+    </script>
+
+
+
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        <div class="site-brand" id="gradient">
+            
+            <a href="/"><svg xmlns="http://www.w3.org/2000/svg" class="brand" viewBox="0 0 100.9 15.5"><defs/><path d="M69 16V4l5-4a5 5 0 014 1l1 2 3-3a5 5 0 014 1 5 5 0 011 4v10l-2 1V5l-1-2-2-1-2 1-1 2v10l-2 1V5 3l-3-1-2 1-1 2v10l-2 1zm-54-6h-1V9h1V4l5-4a5 5 0 014 1 5 5 0 011 4v10l-2 1V5l-1-2-2-1-2 1-1 2v4h5l-1 1h-4v5l-2 1v-6zm41 0h-2l1-1h1V4l5-4a5 5 0 013 1 5 5 0 011 4v10l-1 1h-1V5 3l-3-1-2 1v6h4v1h-4v5l-2 1v-6zm35 0h-1V9h1V4l5-4a5 5 0 014 1 5 5 0 011 4v10l-2 1V5l-1-2-2-1-2 1-1 2v4h5l-1 1h-4v5l-2 1v-6zm-39 2l-5 4a5 5 0 01-3-2 5 5 0 01-2-3l2-1v1l1 2 2 1 2-1 1-2a3 3 0 000-2l-3-1-3-1a3 3 0 01-1-3V3l4-3a5 5 0 013 1l1 3-2 1V4 2h-3a2 2 0 00-1 2 2 2 0 000 1 2 2 0 002 1 5 5 0 014 1 4 4 0 011 4v1zm-23 4V4l5-4a5 5 0 013 1 5 5 0 012 4v10l-2 1V5l-1-2-2-1-3 1v12l-2 1zM2 16H1v-6H0l1-1V1l2-1v9h5l-1 1H3v5l-1 1zm7 0V1l2-1v15l-2 1z"/></svg></a>
+            
+        </div>
+    </header>
+
+            
+    <nav class="nav">
+        <ul class="menu" id="menu">
+            
+                
+            
+            
+            
+                <li class="menu-item"><a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon menu-item-icon"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg><span class="menu-item-name">Home</span></a>
+                </li>
+            
+                <li class="menu-item"><a href="/tech/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg><span class="menu-item-name">Tech</span></a>
+                </li>
+            
+                <li class="menu-item"><a href="/life/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon menu-item-icon"><path d="M368 160h-.94a144 144 0 1 0-286.12 0H80a48 48 0 0 0 0 96h288a48 48 0 0 0 0-96zM195.38 493.69a31.52 31.52 0 0 0 57.24 0L352 288H96z"/></svg><span class="menu-item-name">Life</span></a>
+                </li>
+            
+                <li class="menu-item active"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon menu-item-icon"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">Tags</span></a>
+                </li>
+            
+                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon menu-item-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">About</span></a>
+                </li>
+            
+        </ul>
+    </nav>
+
+            
+            
+    
+        
+            
+        
+        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
+    
+
+            
+    
+        
+<main class="main list" id="main">
+    <div class="main-inner">
+        <div class="content tag-cloud">
+            
+                <h1 class="list-title">Tags</h1>
+            
+            
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/debate/" class="tag-cloud-item" style="font-size: 1em">debate</a>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/leetcode/" class="tag-cloud-item" style="font-size: 2.4313637641589874em">leetcode</a>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/minecraft/" class="tag-cloud-item" style="font-size: 1em">Minecraft</a>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/rcu/" class="tag-cloud-item" style="font-size: 1em">rcu</a>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/%E4%B8%A5%E8%B0%A8%E8%AE%A4%E7%9C%9F/" class="tag-cloud-item" style="font-size: 1.4515449934959717em">严谨认真</a>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/%E4%BC%91%E9%97%B2%E5%A8%B1%E4%B9%90/" class="tag-cloud-item" style="font-size: 2.4313637641589874em">休闲娱乐</a>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/%E5%A4%84%E4%B8%96/" class="tag-cloud-item" style="font-size: 1em">处世</a>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/%E6%86%A8%E6%86%A8%E6%8C%87%E5%8C%97/" class="tag-cloud-item" style="font-size: 1em">憨憨指北</a>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/%E8%A6%81%E6%AD%BB%E4%BA%86%E7%9A%84%E6%95%B0%E5%AD%A6/" class="tag-cloud-item" style="font-size: 1em">要死了的数学</a>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        <a href="/tags/%E9%A2%98%E8%A7%A3/" class="tag-cloud-item" style="font-size: 1em">题解</a>
+                    
+                
+            
+        </div>
+    </div>
+</main>
+    
+
+            
+    <div id="back-to-top" class="back-to-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    </div>
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner"><div class="site-info">©&nbsp;2019–2021&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;HAN Shanglin</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
+
+            
+        </div>
+    </footer>
+
+        </div>
+        <script src="/js/meme.min.ce9abe01c28f355b55a3d9a696625560aaa37522a8bee8b85b12cd0eaccc7fb6.js" integrity="sha256-zpq+AcKPNVtVo9mmlmJVYKqjdSKovui4WxLNDqzMf7Y=" data-no-instant></script>
+
+
+    <script data-no-instant>InstantClick.init();</script>
+
+
+    <script data-no-instant>
+        InstantClick.on('change', function () {
+            backToTop();
+        });
+    </script>
+
+
+
+    <script data-no-instant>
+        InstantClick.on('change', function () {
+            const userPrefers = localStorage.getItem('theme');
+            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+            const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
+            if (userPrefers === "dark") {
+                changeModeMeta("dark");
+                changeMode("🌙", "chroma", "chroma-dark");
+            } else if (userPrefers === "light") {
+                changeModeMeta("light");
+                changeMode("🌞", "chroma-dark", "chroma");
+            } else if (darkModeMediaQuery.matches) {
+                changeModeMeta("dark");
+                changeMode("🌙", "chroma", "chroma-dark");
+            } else if (lightModeMediaQuery.matches) {
+                changeModeMeta("light");
+                changeMode("🌞", "chroma-dark", "chroma");
+            }
+        });
+    </script>
+<script data-no-instant>
+            InstantClick.on('change', function () {
+                gtag('config', 'UA-142189813-2', {
+                    'page_path': location.pathname + location.search
+                });
+            });
+        </script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+        speedAsDuration: true
+    });
+</script>
+
+
+
+
+
+
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
+
+<script>
+    mediumZoom('[data-zoomable]', {
+        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
+    })
+</script>
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
